@@ -1,0 +1,4 @@
+Superuser
+username: admin
+email address: admin@littlelemon.com
+password: admin123
