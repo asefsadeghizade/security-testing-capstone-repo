@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "LittleLemonAPI",
     "rest_framework.authtoken",
+    "djoser",
 ]
 
 MIDDLEWARE = [
@@ -139,3 +140,7 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.SessionAuthentication",
     ],
 }
+
+DJOSER = {
+    "USER_ID_FIELD": "username"
+    }
