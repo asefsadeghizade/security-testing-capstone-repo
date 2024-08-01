@@ -12,4 +12,14 @@ class MenuItem(models.Model):
         return f"{self.title}: {str(self.price)}"
     
     def __str__(self) -> str:
-        return self.title.title()
+        return f"{self.title}: {str(self.price)}"
+    
+    
+class Booking(models.Model):
+    
+    name = models.CharField(max_length=255)
+    no_of_guests = models.IntegerField()
+    bookingDate = models.DateTimeField()
+    
+    def __str__(self) -> str:
+        return f"{self.name} for {str(self.no_of_guests)} guests on {self.bookingDate}"
